@@ -6,7 +6,7 @@
 4. `docker login` use your credentials. Create a repository sidecar
 5. `docker tag localserver:latest purnimak/private-sidecar:localserver`
 6. `docker push purnimak/private-sidecar:localserver`
-7. `cd ../k8s`
+7. `cd ../k8s` Use the same image name in https://github.com/purn1mak/K8S-sidecar/blob/master/k8s/deployment.yaml#L18
 8. `kubectl create -f deployment.yaml`
 9. `kubectl describe deployments webhook-server`
 10 `kubectl get pods`
