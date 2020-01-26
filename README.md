@@ -2,7 +2,7 @@
 
 1. `cd docker`
 2. `docker build . -t localserver`
-3. Cut and Paste the root CA from the docker build output `Step 12/13 : RUN cat rootCA.crt | base64 | tr -d '\n'` and replace the value currently in https://github.com/purnimak/k8s-webhook/blob/master/k8s/hook.yaml#L14
+3. Cut and Paste the root CA from the docker build output `Step 12/13 : RUN cat rootCA.crt | base64 | tr -d '\n'` and replace the value currently in https://github.com/purnimak/k8s-sidecar/blob/master/k8s/hook.yaml#L14
 4. `docker login` use your credentials. Create a repository sidecar
 5. `docker tag localserver:latest purnimak/private-sidecar:localserver`
 6. `docker push purnimak/private-sidecar:localserver`
