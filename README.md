@@ -1,4 +1,4 @@
-# k8s-webhook
+# K8S-sidecar
 
 1. `cd docker`
 2. `docker build . -t localserver`
